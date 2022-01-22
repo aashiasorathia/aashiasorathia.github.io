@@ -1,1 +1,0 @@
-# aashiasorathia.github.io
