@@ -459,6 +459,32 @@
   </div>
 </section>
 
+<section id="projects">
+  <h2 class="section-title">Projects I've<br><em>Worked On</em></h2>
+  <div class="project-grid">
+    <div class="project-card fade-up">
+      <div class="project-head">
+        <div class="project-title">AutomationExercise E2E Framework</div>
+        <div class="project-links">
+          <a href="https://github.com/aashiasorathia/automationexercise-e2e-framework" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+      <p class="project-desc">
+        A single PyTest framework that tests both the UI and the REST API of automationexercise.com — one repo, one config, one CI pipeline, two layers of coverage. Built to mirror how real SDET work is structured, not just a script that clicks through a site.
+      </p>
+      <ul class="project-bullets">
+        <li>Built a <strong>Page Object Model</strong> for UI flows with Playwright, plus a matching <strong>API client layer</strong> over <code>requests.Session</code> so both suites share the same config, fixtures, and logging.</li>
+        <li>Designed <strong>pytest markers</strong> (<code>api</code> / <code>ui</code> / <code>smoke</code>) so CI runs a fast API + smoke gate on every push and the full UI regression suite on schedule.</li>
+        <li>Wired up a <strong>GitLab CI pipeline</strong> (lint → API tests → UI tests → Allure report) with a pinned Docker image so local and CI runs behave identically.</li>
+        <li>Debugged real flake sources, including <strong>network interception for ad iframes</strong> that were breaking checkout-flow tests.</li>
+      </ul>
+      <div class="project-tags">
+        <span class="skill-tag">Playwright</span><span class="skill-tag">PyTest</span><span class="skill-tag">Python</span><span class="skill-tag">REST API Testing</span><span class="skill-tag">Page Object Model</span><span class="skill-tag">GitLab CI/CD</span><span class="skill-tag">Allure</span><span class="skill-tag">Docker</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="skills">
   <h2 class="section-title">Skills &amp;<br><em>Technologies</em></h2>
   <div class="skills-grid">
